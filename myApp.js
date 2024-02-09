@@ -7,7 +7,7 @@ app.get('/', (req, res) =>{
         res.sendFile(absolutePath);
       })
       
-      
+app.use('/public', express.static(__dirname + "/public"));
 
 
 
