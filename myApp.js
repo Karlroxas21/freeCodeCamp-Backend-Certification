@@ -47,6 +47,12 @@ app.get("/:word/echo", (req, res)=>{
   res.send({echo: req.params.word});
 });
 
+app.get("/name", (req, res)=> {
+  firstname = req.query.first;
+  lastname = req.query.last;
+  res.send({name: `${firstname} ${lastname}`})
+});
+
 
 
 
