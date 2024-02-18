@@ -43,6 +43,9 @@ app.use((req, res, next) =>{
   next();
 })
 
+app.get("/:word/echo", (req, res)=>{
+  res.send({echo: req.params.word});
+});
 
 
 
